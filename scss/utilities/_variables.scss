@@ -1,0 +1,43 @@
+//==========================
+// COLOR VARIABLES
+//==========================
+
+$royal-blue : #4645F7;
+$aqua-marine : #4DF5B8;
+$bright-turquoise: #1BEEE7;
+$forest-green: #28AE24;
+$carnation: #F45D66;
+$coral: #F97C53;
+$lavender: #BC6EED;
+$white: #fff;
+$black: #000;
+$gray: #d3d3d3;
+
+//==========================
+// FONT VARIABLES
+//==========================
+
+
+
+//==========================
+// GRID COLOR VARIABLES
+//==========================
+
+$grid-col : (
+      3 : $lavender,
+      4 : $bright-turquoise,
+      5 : $forest-green,
+      6 : $royal-blue,
+      7 : $carnation,
+      8 : $coral,
+    12  : $aqua-marine
+);
+
+//==========================
+// GRID VARIABLES
+//==========================
+
+$g-col-width: 65px;
+$g-gutter-width: 10px;
+$g-col-count: 12;
+$g-cont-max-w: 1040px;

@@ -1,0 +1,36 @@
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+}
+
+.nav__item {
+  margin: 10px;
+  padding: 10px;
+  font-size: 2em;
+  color: $gray;
+  @extend %centered;
+
+}
+
+.nav__item :hover{
+  color: $white;
+  background-color: $bright-turquoise;
+
+
+}
+
+.link {
+  color: $bright-turquoise;
+  padding: 0;
+  margin: 0;
+}
+a {
+  padding: 20px 50px 20px 50px;
+  margin: 20px;
+  text-decoration: none;
+  color: $gray;
+
+}

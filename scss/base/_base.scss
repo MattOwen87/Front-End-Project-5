@@ -1,0 +1,20 @@
+
+* {
+  box-sizing: border-box;
+
+}
+
+
+
+ul {
+  list-style: none;
+
+}
+
+p {
+  @extend %centered;
+  color: $gray;
+  font-size: 1.8em;
+  margin: 50px 50px 20px 50px;
+
+}
