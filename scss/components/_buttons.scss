@@ -7,6 +7,8 @@
   font-size: 2em;
   color: $white;
   background-color: $bright-turquoise;
+  @extend %uppercase;
+  @extend %rounded;
 }
 
 .btn--success.theme__colors {
@@ -16,6 +18,8 @@
   font-size: 2em;
   color: $white;
   background-color: $forest-green;
+  @extend %uppercase;
+  @extend %rounded;
 }
 
 .btn--error.theme__colors {
@@ -25,6 +29,8 @@
   font-size: 2em;
   color: $white;
   background-color: $carnation;
+  @extend %uppercase;
+  @extend %rounded;
 }
 
 .btn--warning.theme__colors {
@@ -34,6 +40,8 @@
   font-size: 2em;
   color: $white;
   background-color: $coral;
+  @extend %uppercase;
+  @extend %rounded;
 }
 
 .btn--info.theme__colors {
@@ -43,4 +51,6 @@
   font-size: 2em;
   color: $white;
   background-color: $lavender;
+  @extend %uppercase;
+  @extend %rounded;
 }

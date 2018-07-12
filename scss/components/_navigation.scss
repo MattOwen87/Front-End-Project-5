@@ -18,6 +18,8 @@
 .nav__item :hover{
   color: $white;
   background-color: $bright-turquoise;
+  @extend %rounded;
+  @extend %ease-in;
 
 
 }
@@ -28,7 +30,7 @@
   margin: 0;
 }
 a {
-  padding: 20px 50px 20px 50px;
+  padding: 20px 100px 20px 100px;
   margin: 20px;
   text-decoration: none;
   color: $gray;

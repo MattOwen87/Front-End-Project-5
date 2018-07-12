@@ -2,3 +2,16 @@
 %centered {
   text-align: center;
 }
+
+%rounded {
+  border-radius: 10px;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+%ease-in {
+  transition-timing-function: ease-in;
+  transition-duration: .5s;
+}
