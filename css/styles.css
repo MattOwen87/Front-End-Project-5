@@ -317,10 +317,12 @@ ul {
   list-style: none; }
 
 p {
-  font-family: "Merriweather", serif;
   color: #d3d3d3;
   font-size: 1.8em;
   margin: 50px 50px 20px 50px; }
+  @media (min-width: 1024px) {
+    p {
+      font-size: 1.5em; } }
 
 .btn--default.theme__colors {
   padding: 30px;
@@ -328,7 +330,13 @@ p {
   margin-top: 30px;
   font-size: 2em;
   color: #fff;
-  background-color: #1BEEE7; }
+  background-color: #1BEEE7;
+  font-family: "Merriweather", sans-serif; }
+  @media (min-width: 1024px) {
+    .btn--default.theme__colors {
+      margin: 10px;
+      padding: 10px 50px 10px 50px;
+      font-size: 1.5em; } }
 
 .btn--success.theme__colors {
   padding: 30px;
@@ -336,7 +344,13 @@ p {
   margin-top: 30px;
   font-size: 2em;
   color: #fff;
-  background-color: #28AE24; }
+  background-color: #28AE24;
+  font-family: "Merriweather", sans-serif; }
+  @media (min-width: 1024px) {
+    .btn--success.theme__colors {
+      margin: 10px;
+      padding: 10px 50px 10px 50px;
+      font-size: 1.5em; } }
 
 .btn--error.theme__colors {
   padding: 30px;
@@ -344,7 +358,13 @@ p {
   margin-top: 30px;
   font-size: 2em;
   color: #fff;
-  background-color: #F45D66; }
+  background-color: #F45D66;
+  font-family: "Merriweather", sans-serif; }
+  @media (min-width: 1024px) {
+    .btn--error.theme__colors {
+      margin: 10px;
+      padding: 10px 50px 10px 50px;
+      font-size: 1.5em; } }
 
 .btn--warning.theme__colors {
   padding: 30px;
@@ -352,7 +372,13 @@ p {
   margin-top: 30px;
   font-size: 2em;
   color: #fff;
-  background-color: #F97C53; }
+  background-color: #F97C53;
+  font-family: "Merriweather", sans-serif; }
+  @media (min-width: 1024px) {
+    .btn--warning.theme__colors {
+      margin: 10px;
+      padding: 10px 50px 10px 50px;
+      font-size: 1.5em; } }
 
 .btn--info.theme__colors {
   padding: 30px;
@@ -360,7 +386,13 @@ p {
   margin-top: 30px;
   font-size: 2em;
   color: #fff;
-  background-color: #BC6EED; }
+  background-color: #BC6EED;
+  font-family: "Merriweather", sans-serif; }
+  @media (min-width: 1024px) {
+    .btn--info.theme__colors {
+      margin: 10px;
+      padding: 10px 50px 10px 50px;
+      font-size: 1.5em; } }
 
 .form__input {
   margin: 10px 10px 10px 50px;
@@ -370,7 +402,14 @@ p {
   border-style: none;
   border-bottom: 5px solid #1BEEE7;
   font-size: 2em;
-  outline: none; }
+  outline: none;
+  font-family: "Merriweather", sans-serif; }
+  @media (min-width: 1024px) {
+    .form__input {
+      font-size: 1.5em;
+      height: 150px;
+      width: 80%;
+      margin-bottom: 20px; } }
 
 .form__label--hidden {
   display: none; }
@@ -379,21 +418,35 @@ p {
   width: 80%;
   margin: 10px auto;
   padding: 30px; }
+  @media (min-width: 1024px) {
+    .grid__col--3 {
+      margin-left: 5px; } }
 
 .grid__col--4 {
   width: 80%;
   margin: 10px auto;
   padding: 30px; }
+  @media (min-width: 1024px) {
+    .grid__col--4 {
+      margin-left: 5px;
+      width: 60%; } }
 
 .grid__col--5 {
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 30px; }
+  @media (min-width: 1024px) {
+    .grid__col--5 {
+      margin-right: 5px;
+      width: 50%; } }
 
 .grid__col--6 {
   width: 80%;
   margin: 10px auto;
   padding: 30px; }
+  @media (min-width: 1024px) {
+    .grid__col--6 {
+      margin-left: 5px; } }
 
 .grid__col--7 {
   width: 80%;
@@ -402,18 +455,30 @@ p {
 
 .grid__col--8 {
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 30px; }
 
 .grid__col--12 {
   width: 80%;
   margin: 0 auto;
   padding: 30px; }
+  @media (min-width: 1024px) {
+    .grid__col--12 {
+      display: flex;
+      flex-direction: row;
+      margin-left: 5px;
+      width: 100%; } }
 
 .grid__row {
   display: flex;
   flex-direction: column;
-  margin: 70px; }
+  margin: 70px;
+  font-family: "Merriweather", sans-serif; }
+  @media (min-width: 1024px) {
+    .grid__row {
+      display: flex;
+      flex-direction: row;
+      margin: 50px; } }
 
 .grid__col--3.theme__colors {
   background-color: #BC6EED;
@@ -447,6 +512,9 @@ p {
   padding: 10px;
   margin: 25px 0 25px 0;
   width: 30%; }
+  @media (min-width: 1024px) {
+    .img--logo {
+      width: 70%; } }
 
 .img--frame {
   padding: 20px;
@@ -461,12 +529,21 @@ p {
   display: flex;
   flex-direction: column;
   padding: 20px; }
+  @media (min-width: 1024px) {
+    .nav {
+      display: flex;
+      flex-direction: row; } }
 
 .nav__item {
   margin: 10px;
   padding: 10px;
   font-size: 2em;
-  color: #d3d3d3; }
+  color: #d3d3d3;
+  font-family: "Merriweather", sans-serif; }
+  @media (min-width: 1024px) {
+    .nav__item {
+      font-size: 1.5em;
+      margin-top: 100px; } }
 
 .nav__item :hover {
   color: #fff;
@@ -482,18 +559,29 @@ a {
   margin: 20px;
   text-decoration: none;
   color: #d3d3d3; }
+  @media (min-width: 1024px) {
+    a {
+      padding: 10px;
+      margin: 0; } }
 
 .headline--secondary {
   color: #d3d3d3;
   font-size: 2.5em;
   text-align: left;
   margin: 50px 0 0 50px; }
+  @media (min-width: 1024px) {
+    .headline--secondary {
+      font-size: 1.5em; } }
 
 .headline--primary {
   color: #1BEEE7;
   font-size: 3em;
   margin: 20px auto;
   width: 60%; }
+  @media (min-width: 1024px) {
+    .headline--primary {
+      font-size: 2em;
+      width: 100%; } }
 
 .blockquote {
   font-size: 2em;
@@ -502,5 +590,9 @@ a {
   margin: 50px auto;
   padding: 10px;
   width: 50%; }
+  @media (min-width: 1024px) {
+    .blockquote {
+      width: 100%;
+      font-size: 1.8em; } }
 
 /*# sourceMappingURL=styles.css.map */

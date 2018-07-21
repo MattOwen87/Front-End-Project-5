@@ -7,8 +7,14 @@
   font-size: 2em;
   color: $white;
   background-color: $bright-turquoise;
+  font-family: $font-stack-primary;
   @extend %uppercase;
   @extend %rounded;
+  @include mq(large){
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+    font-size: 1.5em;
+  }
 }
 
 .btn--success.theme__colors {
@@ -18,8 +24,14 @@
   font-size: 2em;
   color: $white;
   background-color: $forest-green;
+  font-family: $font-stack-primary;
   @extend %uppercase;
   @extend %rounded;
+  @include mq(large){
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+    font-size: 1.5em;
+  }
 }
 
 .btn--error.theme__colors {
@@ -29,8 +41,14 @@
   font-size: 2em;
   color: $white;
   background-color: $carnation;
+  font-family: $font-stack-primary;
   @extend %uppercase;
   @extend %rounded;
+  @include mq(large){
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+    font-size: 1.5em;
+  }
 }
 
 .btn--warning.theme__colors {
@@ -40,8 +58,14 @@
   font-size: 2em;
   color: $white;
   background-color: $coral;
+  font-family: $font-stack-primary;
   @extend %uppercase;
   @extend %rounded;
+  @include mq(large){
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+    font-size: 1.5em;
+  }
 }
 
 .btn--info.theme__colors {
@@ -51,6 +75,12 @@
   font-size: 2em;
   color: $white;
   background-color: $lavender;
+  font-family: $font-stack-primary;
   @extend %uppercase;
   @extend %rounded;
+  @include mq(large){
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+    font-size: 1.5em;
+  }
 }

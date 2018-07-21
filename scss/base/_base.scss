@@ -13,9 +13,12 @@ ul {
 
 p {
   @extend %centered;
-  font-family: $font-stack-primary;
   color: $gray;
   font-size: 1.8em;
   margin: 50px 50px 20px 50px;
+@media #{$br-l}{
+  font-size: 1.5em;
+}
+
 
 }

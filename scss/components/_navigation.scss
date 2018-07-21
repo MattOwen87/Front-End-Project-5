@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  @include mq(large){
+    display: flex;
+    flex-direction: row;
+
+  }
 
 }
 
@@ -11,7 +16,13 @@
   padding: 10px;
   font-size: 2em;
   color: $gray;
+  font-family: $font-stack-primary;
   @extend %centered;
+  @include mq(large){
+    font-size: 1.5em;
+    margin-top: 100px;
+  }
+
 
 }
 
@@ -20,8 +31,6 @@
   background-color: $bright-turquoise;
   @extend %rounded;
   @extend %ease-in;
-
-
 }
 
 .link {
@@ -34,5 +43,11 @@ a {
   margin: 20px;
   text-decoration: none;
   color: $gray;
+  @include mq(large){
+    padding: 10px;
+    margin: 0;
+  }
+
+
 
 }

@@ -12,6 +12,13 @@
   border-bottom: 5px solid $bright-turquoise;
   font-size: 2em;
   outline: none;
+  font-family: $font-stack-primary;
+  @include mq(large){
+    font-size: 1.5em;
+    height: 150px;
+    width: 80%;
+    margin-bottom: 20px;
+  }
 
 }
 

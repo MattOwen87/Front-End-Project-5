@@ -6,8 +6,11 @@
   width: 80%;
   margin: 10px auto;
   padding: 30px;
-
   @extend %rounded;
+  @media #{$br-l}{
+    margin-left: 5px;
+  }
+
 }
 
 .grid__col--4 {
@@ -15,13 +18,22 @@
   margin: 10px auto;
   padding: 30px;
   @extend %rounded;
+  @media #{$br-l}{
+    margin-left: 5px;
+    width: 60%;
+  }
+
 }
 
 .grid__col--5 {
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 30px;
   @extend %rounded;
+  @media #{$br-l}{
+    margin-right: 5px;
+    width: 50%;
+  }
 }
 
 .grid__col--6 {
@@ -30,16 +42,21 @@
   margin: 10px auto;
   padding: 30px;
   @extend %rounded;
+  @media #{$br-l}{
+    margin-left: 5px;
+  }
+
 }
 .grid__col--7 {
   width: 80%;
   margin: 10px auto;
   padding: 30px;
   @extend %rounded;
+
 }
 .grid__col--8 {
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 30px;
   @extend %rounded;
 }
@@ -49,6 +66,11 @@ width: 80%;
 margin: 0 auto;
 padding: 30px;
 @extend %rounded;
+@include mq(large){
+  @include flex;
+  margin-left: 5px;
+  width: 100%;
+}
 }
 
 .grid__row{
@@ -56,20 +78,26 @@ padding: 30px;
   flex-direction: column;
   @extend %centered;
   margin: 70px;
-
+  font-family: $font-stack-primary;
+@include mq(large){
+@include flex;
+  margin: 50px;
+  }
 }
 
 
 
 
-
+//==========================
+// GRID COLOR LOOP
+//==========================
 
 @each $grid, $color in $grid-col {
   .grid__col--#{$grid} {
     &.theme__colors{
     background-color: $color;
     text-align: left;
-  ;
+
+    }
   }
-}
 }

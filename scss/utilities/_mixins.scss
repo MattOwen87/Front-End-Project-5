@@ -1,1 +1,34 @@
 
+//==========================
+// MEDIA QUERY MIXINS
+//==========================
+
+@mixin mq ($break) {
+  @if $break == "small"{
+    @media (min-width: $br-s) and (max-width: $br-m) {
+      @content;
+    }
+  }
+  @else if $break == "medium"{
+    @media (min-width: $br-m + 1) {
+      @content;
+    }
+  }
+  @else if $break == "large"{
+    @media (min-width: $br-l) {
+      @content;
+    }
+  }
+  @else {
+    @error "ERROR NO VALUE FOR #{$break}";
+  }
+}
+
+//==========================
+// FLEXBOX MIXIN
+//==========================
+
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+}

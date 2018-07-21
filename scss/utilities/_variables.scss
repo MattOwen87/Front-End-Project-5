@@ -17,7 +17,7 @@ $gray: #d3d3d3;
 // FONT VARIABLES
 //==========================
  $font-stack-url: 'https://fonts.googleapis.com/css?family=Merriweather:400,400i';
- $font-stack-primary: 'Merriweather', serif;
+ $font-stack-primary: 'Merriweather', sans-serif;
 
 
 //==========================
@@ -34,11 +34,11 @@ $grid-col : (
     12  : $aqua-marine
 );
 
+
 //==========================
-// GRID VARIABLES
+// BREAKPOINTS
 //==========================
 
-$g-col-width: 65px;
-$g-gutter-width: 10px;
-$g-col-count: 12;
-$g-cont-max-w: 1040px;
+$br-s: 1px;
+$br-m: 768px;
+$br-l: 1024px;
